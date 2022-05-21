@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "Mbappai portfolio",
   "private": true,
   "description": "A starter for a blog powered by Gatsby and Markdown",
   "version": "0.1.0",
@@ -8,6 +8,7 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "@fontsource/ibm-plex-sans": "^4.5.10",
     "gatsby": "^4.14.1",
     "gatsby-plugin-feed": "^4.14.0",
     "gatsby-plugin-gatsby-cloud": "^4.14.0",
