@@ -11,8 +11,10 @@ module.exports = {
       twitter: `mbappaicom`,
     },
   },
+  
   plugins: [
     `gatsby-plugin-image`,
+    'gatsby-plugin-theme-ui',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -129,4 +131,14 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
+  // presets: [
+  //   [
+  //     'babel-preset-gatsby',
+  //     {
+  //       importSource: 'theme-ui', // or '@theme-ui/core'
+  //       runtime: 'automatic',
+  //       throwIfNamespace: false,
+  //     },
+  //   ],
+  // ],
 }

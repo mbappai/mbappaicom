@@ -8,7 +8,11 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "@babel/preset-react": "^7.17.12",
+    "@emotion/react": "^11.9.0",
+    "@fontsource/bitter": "^4.5.7",
     "@fontsource/ibm-plex-sans": "^4.5.10",
+    "@mdx-js/react": "^1.6.22",
     "gatsby": "^4.14.1",
     "gatsby-plugin-feed": "^4.14.0",
     "gatsby-plugin-gatsby-cloud": "^4.14.0",
@@ -18,6 +22,7 @@
     "gatsby-plugin-offline": "^5.14.1",
     "gatsby-plugin-react-helmet": "^5.14.0",
     "gatsby-plugin-sharp": "^4.14.1",
+    "gatsby-plugin-theme-ui": "^0.14.5",
     "gatsby-remark-copy-linked-files": "^5.14.0",
     "gatsby-remark-images": "^6.14.0",
     "gatsby-remark-prismjs": "^6.14.0",
@@ -30,10 +35,12 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
+    "theme-ui": "^0.14.5",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75"
   },
   "devDependencies": {
+    "babel-preset-gatsby": "^2.16.0",
     "prettier": "^2.6.2"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
