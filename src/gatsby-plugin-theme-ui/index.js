@@ -8,12 +8,13 @@ const theme = {
           title:'Bitter, Georgia'
         },
         fontSizes: [
-          12, 14, 16, 20, 24, 32, 48, 64
+          12, 14, 16, 20, 25, 32, 48, 61, 76
         ],
         fontWeights: {
           normal: 400,
           medium: 500,
           bold: 700,
+          xbold: 800
         },
 
         lineHeights: {
@@ -33,7 +34,7 @@ const theme = {
               },
               list:{
                 fontWeight:'medium',
-                fontSize:3,
+                fontSize:2,
                 lineHeight:'body',
                 letterSpacing:'listItem',
                 textDecorationStyle:'underline dotted red'
@@ -41,15 +42,15 @@ const theme = {
 
               heading: {
                 fontFamily: 'heading',
-                fontWeight: 'heading',
+                fontWeight: 'bold',
                 lineHeight: 'heading',
               },
               title:{
                   fontFamily:'title',
-                //   fontWeight:'bold',
-                //   lineHeight: 'heading',
-                //   letterSpacing:'heading',
-                  fontSizes:[7]
+                  fontWeight:'xbold',
+                  lineHeight: 'heading',
+                  letterSpacing:'heading',
+                  fontSize: 6,
               }
             },
           

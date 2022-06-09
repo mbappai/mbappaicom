@@ -32,7 +32,7 @@ const BlogIndex = ({ data, location }) => {
       <Seo title="Blogs written by Mujahid Bappai" />
       <>
 
-      <Heading as= 'h1' style={{fontWeight:'700'}} variant="text.title">Writings</Heading>
+      <Heading as= 'h1' variant="text.title">All Posts</Heading>
       <ol style={{ listStyle: `disc` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
@@ -45,11 +45,11 @@ const BlogIndex = ({ data, location }) => {
                 itemType="http://schema.org/Article"
               >
                 {/* <header> */}
-                  {/* <Text variant="text.list"> */}
-                    <Link  sx={{variant:'text.list'}} to={post.fields.slug} itemProp="url">
-                      <span itemProp="headline">{title}{<Text> — {post.frontmatter.date}</Text>}</span>
+                  <Text variant="text.list">
+                    <Link  to={post.fields.slug} itemProp="url">
+                      <span style={{display:'inline-block',borderBottom:'2px dashed black',padding: '2px',}} itemProp="headline">{title}{<Text> — {post.frontmatter.date}</Text>}</span>
                     </Link>
-                  {/* </Text> */}
+                  </Text>
                   {/* <Text>{post.frontmatter.date}</Text> */}
                 {/* </header> */}
                 {/* <section>
