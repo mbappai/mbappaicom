@@ -1,5 +1,5 @@
 ---
-title: How to read a public variable in solidity from frontend.
+title: How to read a public variable in solidity from frontend
 date: "2022-05-19T22:40:32.169Z"
 description: Solidity creates a getter function for all public variables in your contract if compiles.
 ---

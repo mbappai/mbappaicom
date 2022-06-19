@@ -37,8 +37,9 @@ const theme = {
                 fontSize:2,
                 lineHeight:'body',
                 letterSpacing:'listItem',
-                textDecorationStyle:'underline dotted red'
+                // fontStyle:'italic'
               },
+  
 
               heading: {
                 fontFamily: 'heading',

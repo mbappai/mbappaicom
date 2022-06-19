@@ -11,7 +11,7 @@ import Seo from "../components/seo"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
-  const posts = data.allMarkdownRemark.nodes
+  const posts = data.allMdx.nodes
 
   if (posts.length === 0) {
     return (
@@ -39,33 +39,18 @@ const BlogIndex = ({ data, location }) => {
 
           return (
             <li key={post.fields.slug}>
-              <article
-                className="post-list-item"
-                itemScope
-                itemType="http://schema.org/Article"
-              >
+              
                 {/* <header> */}
                   <Text variant="text.list">
                     <Link  to={post.fields.slug} itemProp="url">
-                      <span style={{display:'inline-block',borderBottom:'2px dashed black',padding: '2px',}} itemProp="headline">{title}{<Text> — {post.frontmatter.date}</Text>}</span>
+                      <span style={{display:'inline-block',borderBottom:'2px dashed black',padding: '2px',}} itemProp="headline">{title}{<Text style={{fontStyle:'italic'}}> — {post.frontmatter.date}</Text>}</span>
                     </Link>
                   </Text>
-                  {/* <Text>{post.frontmatter.date}</Text> */}
-                {/* </header> */}
-                {/* <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: post.frontmatter.description || post.excerpt,
-                    }}
-                    itemProp="description"
-                  />
-                </section> */}
-              </article>
             </li>
           )
         })}
       </ol>
-        <Bio />
+        {/* <Bio /> */}
         </>
 
     </Layout>
@@ -81,7 +66,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
       nodes {
         excerpt
         fields {
