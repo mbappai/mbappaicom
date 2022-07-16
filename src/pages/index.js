@@ -32,7 +32,7 @@ const BlogIndex = ({ data, location }) => {
       <Seo title="Blogs written by Mujahid Bappai" />
       <>
 
-      <Heading as= 'h1' variant="text.title">All Posts</Heading>
+      {/* <Heading as= 'h1' variant="text.title">All Posts</Heading> */}
       <ol reversed style={{fontVariantNumeric:'scientific-inferiors'}}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
@@ -41,9 +41,9 @@ const BlogIndex = ({ data, location }) => {
             <li key={post.fields.slug}>
               
                 {/* <header> */}
-                  <Text variant="text.list">
+                  <Text variant="text.link">
                     <Link  to={post.fields.slug} itemProp="url">
-                      <span style={{display:'inline-block',borderBottom:'2px dashed black',padding: '2px',}} itemProp="headline">{title}{<Text style={{fontStyle:'italic'}}> — {post.frontmatter.date}</Text>}</span>
+                      <span style={{display:'inline-block',borderBottom:'2px dashed black',padding: '2px',}} itemProp="headline">{title}</span>
                     </Link>
                   </Text>
             </li>

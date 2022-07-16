@@ -4,6 +4,7 @@ import {Text, Heading} from 'theme-ui'
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
+import PostBodyLayout from '../components/post-body-layout'
 import Seo from "../components/seo"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
@@ -23,16 +24,15 @@ const BlogPostTemplate = ({ data, location }) => {
         itemScope
         itemType="http://schema.org/Article"
       >
-        <header>
-          <Heading itemProp="headline">{post.frontmatter.title}</Heading>
-          <Text>{post.frontmatter.date}</Text>
+        <header className="post-header-width">
+          <Heading as='h1' style={{marginBottom:'0'}} itemProp="headline">{post.frontmatter.title}</Heading>
+          <Text variant='text.body' >{post.frontmatter.date}</Text>
         </header>
-        
+
+        <div className="post-width">
         <MDXRenderer>{post.body}</MDXRenderer>
         <hr />
-        <footer>
-          <Bio />
-        </footer>
+        </div>
       </article>
       <nav className="blog-post-nav">
         <ul
@@ -43,17 +43,17 @@ const BlogPostTemplate = ({ data, location }) => {
             listStyle: `none`,
             padding: 0,
           }}
-        >
+          >
           <li>
             {previous && (
-              <Link to={previous.fields.slug} rel="prev">
+              <Link variant='text.link' to={previous.fields.slug} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link to={next.fields.slug} rel="next">
+              <Link style={{variant:'text.link'}} to={next.fields.slug} rel="next">
                 {next.frontmatter.title} →
               </Link>
             )}

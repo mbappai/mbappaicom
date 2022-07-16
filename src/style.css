@@ -254,9 +254,7 @@ a:focus {
   margin-bottom: var(--spacing-12);
 }
 
-.global-layout{
-  max-width: 450px;
-}
+
 
 .main-heading {
   font-size: var(--fontSize-7);
@@ -321,6 +319,17 @@ a:focus {
 
 .gatsby-highlight {
   margin-bottom: var(--spacing-8);
+}
+
+/* .global-layout{
+  max-width: 450px;
+} */
+.post-width{
+  max-width: 460px;
+}
+.post-header-width{
+  max-width: 500px;
+  margin-bottom: 16px;
 }
 
 /* Media queries */

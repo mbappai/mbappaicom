@@ -7,6 +7,7 @@
 
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import {Text} from 'theme-ui'
 import { StaticImage } from "gatsby-plugin-image"
 
 const Bio = () => {
@@ -43,13 +44,12 @@ const Bio = () => {
         alt="Profile picture"
       /> */}
       {author?.name && (
-        <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
-          {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
-          </a>
-        </p>
+        <Text variant="text.body">
+          Mujahid is a seasoned solidity engineer building well documented,
+          secured and efficient smart-contracts on the ethereum blochain. 
+          You can follow him professionally on Linkedin,
+          like his tweets or better check out his github profile.
+        </Text>
       )}
     </div>
   )
