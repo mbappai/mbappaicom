@@ -2,10 +2,10 @@
 const theme = {
         // colors,
         fonts: {
-          body: 'IBM Plex Sans system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
-          heading: 'IBM Plex Sans, Georgia, serif',
-          monospace: 'Menlo, monospace',
-          title:'Bitter, Georgia'
+          body: 'IBM Plex Sans Condensed, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
+          heading: 'IBM Plex Sans Condensed, system-ui, Georgia, serif',
+          monospace: 'IBM Plex Mono, monospace',
+          title:'IBM Plex Sans Condensed, system-ui'
         },
         fontSizes: [
           12, 14, 16, 20, 25, 32, 48, 61, 76
@@ -18,14 +18,14 @@ const theme = {
         },
 
         lineHeights: {
-          body: 1.5,
+          body: 1.4,
           heading: 1.125,
           title: 1
         },
         letterSpacings: {
           body: 'normal',
           caps: '0.2em',
-          listItem:'-0.04px'
+          listItem:'-0.08px'
         },
         text: {
               caps: {
@@ -37,6 +37,7 @@ const theme = {
                 fontSize:2,
                 lineHeight:'body',
                 letterSpacing:'listItem',
+                fontFamily:'body'
                 // fontStyle:'italic'
               },
   
@@ -52,8 +53,33 @@ const theme = {
                   lineHeight: 'heading',
                   letterSpacing:'heading',
                   fontSize: 6,
-              }
+              },
+              
             },
+        styles: {
+              h1: {
+                fontSize: 4,
+                fontFamily: 'heading',
+                fontWeight: 'bold',
+                mt: 4,
+                mb: 2,
+              },
+              h2: {
+                fontSize: 5,
+                fontFamily: 'heading',
+                fontWeight: 'bold',
+                mt: 4,
+                mb: 2,
+              },
+              p: {
+                fontSize: 2,
+                fontFamily: 'body',
+                fontWeight: 'medium',
+                lineHeight:'body',
+                letterSpacing:'listItem',
+                mb: 2,
+              },
+            }
           
       
   }

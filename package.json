@@ -1,5 +1,5 @@
 {
-  "name": "Mbappai portfolio",
+  "name": "mbappai-personal-site",
   "private": true,
   "description": "A starter for a blog powered by Gatsby and Markdown",
   "version": "0.1.0",
@@ -10,15 +10,18 @@
   "dependencies": {
     "@babel/preset-react": "^7.17.12",
     "@emotion/react": "^11.9.0",
-    "@fontsource/bitter": "^4.5.7",
+    "@fontsource/ibm-plex-mono": "^4.5.10",
     "@fontsource/ibm-plex-sans": "^4.5.10",
-    "gatsby": "^4.14.1",
+    "@fontsource/ibm-plex-sans-condensed": "^4.5.9",
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "gatsby": "^4.18.2",
     "gatsby-plugin-feed-mdx": "^1.1.0",
     "gatsby-plugin-gatsby-cloud": "^4.14.0",
     "gatsby-plugin-google-analytics": "^4.14.0",
     "gatsby-plugin-image": "^2.14.1",
     "gatsby-plugin-manifest": "^4.14.0",
-    "gatsby-plugin-mdx": "^3.16.1",
+    "gatsby-plugin-mdx": "^1.10.1",
     "gatsby-plugin-offline": "^5.14.1",
     "gatsby-plugin-react-helmet": "^5.14.0",
     "gatsby-plugin-sharp": "^4.14.1",
@@ -34,9 +37,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "theme-ui": "^0.14.5",
-    "typeface-merriweather": "0.0.72",
-    "typeface-montserrat": "0.0.75"
+    "theme-ui": "^0.14.5"
   },
   "devDependencies": {
     "babel-preset-gatsby": "^2.16.0",

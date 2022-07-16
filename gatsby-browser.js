@@ -9,8 +9,10 @@ import "@fontsource/ibm-plex-sans"
 import "@fontsource/ibm-plex-sans/500.css"
 import "@fontsource/ibm-plex-sans/500-italic.css"
 import "@fontsource/ibm-plex-sans/700.css"
-import "@fontsource/bitter/700.css"
-import "@fontsource/bitter/800.css"
+import "@fontsource/ibm-plex-sans-condensed/500-italic.css"
+import "@fontsource/ibm-plex-sans-condensed/500.css"
+import "@fontsource/ibm-plex-sans-condensed/700.css"
+import "@fontsource/ibm-plex-mono"
 
 // Highlighting for code blocks
 import "prismjs/themes/prism.css"
