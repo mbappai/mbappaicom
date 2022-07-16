@@ -33,7 +33,7 @@ const BlogIndex = ({ data, location }) => {
       <>
 
       <Heading as= 'h1' variant="text.title">All Posts</Heading>
-      <ol style={{ listStyle: `disc` }}>
+      <ol reversed style={{fontVariantNumeric:'scientific-inferiors'}}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
 
