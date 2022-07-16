@@ -5,10 +5,7 @@ import "./src/normalize.css"
 import "./src/style.css"
 
 // custom typefaces
-import "@fontsource/ibm-plex-sans"
-import "@fontsource/ibm-plex-sans/500.css"
-import "@fontsource/ibm-plex-sans/500-italic.css"
-import "@fontsource/ibm-plex-sans/700.css"
+import "@fontsource/ibm-plex-sans-condensed/400.css"
 import "@fontsource/ibm-plex-sans-condensed/500-italic.css"
 import "@fontsource/ibm-plex-sans-condensed/500.css"
 import "@fontsource/ibm-plex-sans-condensed/700.css"

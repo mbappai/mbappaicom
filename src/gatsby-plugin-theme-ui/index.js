@@ -1,3 +1,5 @@
+import nightOwl from '@theme-ui/prism/presets/night-owl.json'
+
 // example theme file
 const theme = {
         // colors,
@@ -8,7 +10,7 @@ const theme = {
           title:'IBM Plex Sans Condensed, system-ui'
         },
         fontSizes: [
-          12, 14, 16, 20, 25, 32, 48, 61, 76
+           14, 17, 20, 25, 32, 48, 61, 76
         ],
         space:[0,2,4,8,12,16,24,32,40,48],
         fontWeights: {
@@ -35,14 +37,14 @@ const theme = {
               },
               link:{
                 fontWeight:'medium',
-                fontSize:2,
+                fontSize:1,
                 lineHeight:'body',
                 letterSpacing:'listItem',
                 fontFamily:'body'
               },
               body:{
-                fontWeight:'medium',
-                fontSize:2,
+                fontWeight:'normal',
+                fontSize:1,
                 lineHeight:'body',
                 letterSpacing:'listItem',
                 fontFamily:'body'
@@ -93,23 +95,37 @@ const theme = {
                 mb: 2,
               },
               p: {
-                fontSize: 2,
+                fontSize: 1,
                 fontFamily: 'body',
-                fontWeight: 'medium',
+                fontWeight: 'body',
                 lineHeight:'body',
                 letterSpacing:'body',
                 mb: 4,
                 mt: 1
               },
               li:{
-                fontSize: 2,
+                fontSize: 1,
                 fontFamily: 'body',
-                fontWeight: 'medium',
+                fontWeight: 'normal',
                 lineHeight:'body',
                 letterSpacing:'body',
                 mb: 4,
                 mt: 1
+              },
+              pre: {
+                fontFamily: 'monospace',
+                fontSize:3,
+                bg: 'muted',
+                p: 3,
+                // borderRadius: 'code',
+                overflowX: 'auto',
+              },
+              code:{
+                fontFamily: 'monospace',
+                fontSize: 2,
+                backgroundColor: 'muted',
               }
+            
             }
           
       

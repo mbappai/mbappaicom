@@ -34,7 +34,7 @@ const BlogPostTemplate = ({ data, location }) => {
         <hr />
         </div>
       </article>
-      <nav className="blog-post-nav">
+      {/* <nav className="blog-post-nav">
         <ul
           style={{
             display: `flex`,
@@ -59,7 +59,7 @@ const BlogPostTemplate = ({ data, location }) => {
             )}
           </li>
         </ul>
-      </nav>
+      </nav> */}
     </Layout>
   )
 }

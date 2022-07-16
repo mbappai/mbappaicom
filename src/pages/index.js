@@ -32,6 +32,7 @@ const BlogIndex = ({ data, location }) => {
       <Seo title="Blogs written by Mujahid Bappai" />
       <>
 
+        <Bio />
       {/* <Heading as= 'h1' variant="text.title">All Posts</Heading> */}
       <ol reversed style={{fontVariantNumeric:'scientific-inferiors'}}>
         {posts.map(post => {
@@ -50,7 +51,6 @@ const BlogIndex = ({ data, location }) => {
           )
         })}
       </ol>
-        {/* <Bio /> */}
         </>
 
     </Layout>
