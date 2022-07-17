@@ -1,59 +1,55 @@
-/* CSS Custom Properties Definitions */
-
 
 /* HTML elements */
-
 *,
 :after,
 :before {
   box-sizing: border-box;
 }
 
-/* Custom classes */
-
-.global-wrapper {
-
+/* set color for code tags both inside and outside pre tag */
+:not(pre) > code[class*="language-"], pre[class*="language-"]{
+  background:'black'
 }
+/* .gatsby-highlight{
+  width: 500px;
+} */
 
-.global-wrapper[data-is-root-path="true"] .bio {
-
-}
-
-.global-header {
-
-}
-
-
-
-
-
-
-.bio-avatar {
-  margin-right: var(--spacing-4);
-  margin-bottom: var(--spacing-0);
-  min-width: 50px;
-  border-radius: 100%;
-}
-
-
-
-
-
-
-.global-layout{
-  max-width: 450px;
-} 
-
-.post-width{
-  max-width: 460px;
-}
-.post-header-width{
-  max-width: 500px;
-  margin-bottom: 16px;
-}
 
 /* Media queries */
 
 @media (max-width: 42rem) {
+  :not(pre) > code[class*="language-"], pre[class*="language-"]{
+    background:'black'
+  }
+  .global-wrapper {
+
+  }
+  
+  .global-wrapper[data-is-root-path="true"] .bio {
+  
+  }
+  
+  .global-header {
+  
+  }  
+  
+  .bio-avatar {
+    margin-right: var(--spacing-4);
+    margin-bottom: var(--spacing-0);
+    min-width: 50px;
+    border-radius: 100%;
+  }
+  
+  .global-layout{
+    max-width: 450px;
+  } 
+  
+  .post-width{
+    max-width: 460px;
+  }
+  .post-header-width{
+    max-width: 500px;
+    margin-bottom: 16px;
+  }
   
 }

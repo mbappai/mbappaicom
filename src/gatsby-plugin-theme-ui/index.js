@@ -1,4 +1,4 @@
-import nightOwl from '@theme-ui/prism/presets/night-owl.json'
+import vsDark from '@theme-ui/prism/presets/vs-dark.json'
 
 // example theme file
 const theme = {
@@ -117,21 +117,15 @@ const theme = {
                 px:0
               },
               pre: {
-                fontFamily: 'monospace',
-                fontSize:3,
-                bg: 'red',
-                border:'2px solid black',
-                // borderRadius: 'code',
-                overflowX: 'auto',
-                width:'100%',
-                px:6
+                width:"80%",
+                ".language-solidity":{
+                  // background:'black',
+                  fontFamily:'monospace',
+                  fontSize: 0,
+                  
+                },
+                // ...vsDark
               },
-              code:{
-                fontFamily: 'monospace',
-                fontSize: 2,
-                backgroundColor: 'muted',
-              }
-            
             }
           
       
