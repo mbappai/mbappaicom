@@ -17,18 +17,18 @@ const theme = {
           normal: 400,
           medium: 500,
           bold: 700,
-          xbold: 800
         },
 
         lineHeights: {
           body: 1.4,
           heading: 1.125,
-          title: .9
+          title: .8
         },
         letterSpacings: {
           body: '-0.04px',
           caps: '0.2em',
-          listItem:'-0.04px'
+          listItem:'-0.04px',
+          heading:'-6px'
         },
         text: {
               caps: {
@@ -57,7 +57,7 @@ const theme = {
               },
               title:{
                   fontFamily:'title',
-                  fontWeight:'xbold',
+                  fontWeight:'bold',
                   lineHeight: 'heading',
                   letterSpacing:'heading',
                   fontSize: 6,
@@ -70,6 +70,7 @@ const theme = {
                 fontFamily: 'heading',
                 fontWeight: 'bold',
                 lineHeight:'title',
+                letterSpacing:'heading',
                 mt: 4,
                 mb: 3,
               },
@@ -100,6 +101,7 @@ const theme = {
                 fontWeight: 'body',
                 lineHeight:'body',
                 letterSpacing:'body',
+                width: '55ch',
                 mb: 4,
                 mt: 1
               },
@@ -109,16 +111,20 @@ const theme = {
                 fontWeight: 'normal',
                 lineHeight:'body',
                 letterSpacing:'body',
-                mb: 4,
-                mt: 1
+                mb: 2,
+                mt: 1,
+                ml:0,
+                px:0
               },
               pre: {
                 fontFamily: 'monospace',
                 fontSize:3,
-                bg: 'muted',
-                p: 3,
+                bg: 'red',
+                border:'2px solid black',
                 // borderRadius: 'code',
                 overflowX: 'auto',
+                width:'100%',
+                px:6
               },
               code:{
                 fontFamily: 'monospace',

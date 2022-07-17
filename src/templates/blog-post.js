@@ -29,10 +29,10 @@ const BlogPostTemplate = ({ data, location }) => {
           <Text variant='text.body' >{post.frontmatter.date}</Text>
         </header>
 
-        <div className="post-width">
+        {/* <div className="post-width"> */}
         <MDXRenderer>{post.body}</MDXRenderer>
         <hr />
-        </div>
+        {/* </div> */}
       </article>
       {/* <nav className="blog-post-nav">
         <ul
