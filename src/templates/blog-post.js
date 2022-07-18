@@ -31,7 +31,6 @@ const BlogPostTemplate = ({ data, location }) => {
 
         {/* <div className="post-width"> */}
         <MDXRenderer>{post.body}</MDXRenderer>
-        {/* <hr /> */}
         {/* </div> */}
       </article>
       {/* <nav className="blog-post-nav">
