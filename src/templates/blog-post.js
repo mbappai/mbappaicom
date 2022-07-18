@@ -25,13 +25,13 @@ const BlogPostTemplate = ({ data, location }) => {
         itemType="http://schema.org/Article"
       >
         <header className="post-header-width">
-          <Heading as='h1' style={{marginBottom:'0'}} itemProp="headline">{post.frontmatter.title}</Heading>
+          <Heading as='h1' style={{mb:'2'}} itemProp="headline">{post.frontmatter.title}</Heading>
           <Text variant='text.body' >{post.frontmatter.date}</Text>
         </header>
 
         {/* <div className="post-width"> */}
         <MDXRenderer>{post.body}</MDXRenderer>
-        <hr />
+        {/* <hr /> */}
         {/* </div> */}
       </article>
       {/* <nav className="blog-post-nav">

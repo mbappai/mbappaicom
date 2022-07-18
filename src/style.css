@@ -10,19 +10,78 @@
 :not(pre) > code[class*="language-"], pre[class*="language-"]{
   background:'black'
 }
-/* .gatsby-highlight{
-  width: 500px;
-} */
+
+ol,ul{
+  padding: 0 5x 0 5px;
+  padding-inline-start: 0;
+}
 
 
-/* Media queries */
+blockquote{
+  /* border:2px solid; */
+  margin:10px 0;
+  padding: 0 0 0 10px;
+  border-left: 4px solid;
+}
 
-@media (max-width: 42rem) {
+.content-layout{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.global-wrapper {
+  width: 100%;
+  /* border:2px solid; */
+}
+
+.blog-list{
+  align-self: center;
+  margin-top: 60px;
+}
+.blog-list > li{
+  margin-bottom: 5px;
+}
+
+.bio{
+  display: flex;
+  align-items: center;
+  width: 80%;
+  max-width: 500px;
+  margin-top: 92px;
+}
+
+.bio-avatar {
+  float: left;
+  min-width: 50px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+.layout-header{
+  /* border-bottom: 1px solid black; */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 3em;
+}
+
+
+
+
+@media (min-width: 52rem) {
+
   :not(pre) > code[class*="language-"], pre[class*="language-"]{
     background:'black'
   }
-  .global-wrapper {
 
+  
+
+  
+  .blog-post{
+    grid-column: 2/3;
+    margin-top: 64px;
   }
   
   .global-wrapper[data-is-root-path="true"] .bio {

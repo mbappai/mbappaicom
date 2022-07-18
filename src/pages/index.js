@@ -33,8 +33,8 @@ const BlogIndex = ({ data, location }) => {
       <>
 
         <Bio />
-      {/* <Heading as= 'h1' variant="text.title">All Posts</Heading> */}
-      <ol reversed style={{fontVariantNumeric:'scientific-inferiors'}}>
+
+        <ul className="blog-list" reversed style={{fontVariantNumeric:'scientific-inferiors'}}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
 
@@ -43,14 +43,12 @@ const BlogIndex = ({ data, location }) => {
               
                 {/* <header> */}
                   <Text variant="text.link">
-                    <Link  to={post.fields.slug} itemProp="url">
-                      <span style={{display:'inline-block',borderBottom:'2px dashed black',padding: '2px',}} itemProp="headline">{title}</span>
-                    </Link>
+                    <Link style={{textDecoration:'none'}}  to={post.fields.slug} itemProp="url">{title}</Link>
                   </Text>
             </li>
           )
         })}
-      </ol>
+      </ul>
         </>
 
     </Layout>

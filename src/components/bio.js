@@ -33,16 +33,16 @@ const Bio = () => {
 
   return (
     <div className="bio">
-      {/* <StaticImage
+      <StaticImage
         className="bio-avatar"
         layout="fixed"
         formats={["auto", "webp", "avif"]}
-        src="../images/profile-pic.png"
+        src="../images/gatsby-icon.png"
         width={50}
         height={50}
         quality={95}
         alt="Profile picture"
-      /> */}
+      />
       {author?.name && (
         <Text variant="text.body">
           Mujahid is a seasoned solidity engineer building well documented,

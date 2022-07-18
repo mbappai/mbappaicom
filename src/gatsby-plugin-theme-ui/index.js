@@ -10,7 +10,7 @@ const theme = {
           title:'IBM Plex Sans Condensed, system-ui'
         },
         fontSizes: [
-           14, 17, 20, 25, 32, 48, 61, 76
+           14, 17, 20, 25, 36, 48, 61, 76
         ],
         space:[0,2,4,8,12,16,24,32,40,48],
         fontWeights: {
@@ -22,13 +22,14 @@ const theme = {
         lineHeights: {
           body: 1.4,
           heading: 1.125,
-          title: .8
+          title: 1
         },
+        
         letterSpacings: {
           body: '-0.04px',
           caps: '0.2em',
           listItem:'-0.04px',
-          heading:'-6px'
+          heading:'-1px'
         },
         text: {
               caps: {
@@ -54,17 +55,23 @@ const theme = {
                 fontFamily: 'heading',
                 fontWeight: 'bold',
                 lineHeight: 'heading',
+                fontSize: 4,
+                lineHeight:'title',
+                letterSpacing:'heading'
               },
               title:{
                   fontFamily:'title',
                   fontWeight:'bold',
-                  lineHeight: 'heading',
+                  // lineHeight: 'heading',
                   letterSpacing:'heading',
-                  fontSize: 6,
+                  // fontSize: 6,
               },
               
             },
         styles: {
+            blockquote:{
+
+            },
               h1: {
                 fontSize: 4,
                 fontFamily: 'heading',
@@ -111,13 +118,15 @@ const theme = {
                 fontWeight: 'normal',
                 lineHeight:'body',
                 letterSpacing:'body',
+                width:'55ch',
                 mb: 2,
                 mt: 1,
                 ml:0,
                 px:0
               },
               pre: {
-                width:"80%",
+                width:"700px",
+                overflowX:'auto',
                 ".language-solidity":{
                   // background:'black',
                   fontFamily:'monospace',
