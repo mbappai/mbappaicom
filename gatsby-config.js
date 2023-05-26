@@ -9,7 +9,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `mbappai blog`,
+    title: `mbappai`,
     author: {
       name: `Mujahid Bappai`,
       summary: `who lives and works in Kano, Nigeria building web apps @ lazarus networks.`,
